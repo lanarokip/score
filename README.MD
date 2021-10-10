@@ -25,16 +25,15 @@ You need the following softwares installed:
 To confirm run the following command on linux
 ```
 $ java --version
-$ mvn --version
 $ gradle --version
 ```
 ---
 ## Installing
-* Clone this project using ``` git clone https://github.com/KyleTrippK/Hero-Squad.git```
+* Clone this project using ``` git clone https://github.com/lanarokip/score.git```
 
 Open the folder with your favourite IDE.
-* Navigate into the ``` src/main/java/App.java ``` and click run in intellij.
-* Go to your browser and type ``` localhost:4567 ```
+* Navigate into the ``` src/main/java/App.java ``` and click run in androidStudio .
+* click on the run button and navigate to the AVD .
 ---
 ## Running the Tests
 
@@ -42,8 +41,8 @@ Create a test class for running tests in the application.
 ## Technologies
 
 * JAVA
-* Spark
-* [Intellij Idea](https://www.jetbrains.com/idea/) - Intergated development
+* Android Studio
+
 
 ## Contacts
 ##LIVE
