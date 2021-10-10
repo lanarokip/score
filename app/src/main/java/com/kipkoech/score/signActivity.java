@@ -45,7 +45,8 @@ public class signActivity extends AppCompatActivity {
                     }
 
                     else{
-                        Toast.makeText(signActivity.this,"wrong info",Toast.LENGTH_LONG).show();
+                        Toast.makeText(signActivity.this,"wrong email or username",Toast.LENGTH_LONG).show();
+
                     }
                 }
 
