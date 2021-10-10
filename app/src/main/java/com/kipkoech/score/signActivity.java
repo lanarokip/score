@@ -18,6 +18,7 @@ public class signActivity extends AppCompatActivity {
     @BindView(R.id.editTextTextPersonName) EditText userName;
     @BindView(R.id.editTextTextEmailAddress2) EditText userEmail;
     @BindView(R.id.submit) Button submit;
+    private int attempt = 5 ;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,9 +37,18 @@ public class signActivity extends AppCompatActivity {
                     Intent intent = new Intent(signActivity.this, livescore.class);
                     startActivity(intent);
                 }
-                else{
-                    Toast.makeText(signActivity.this,"Wrong info",Toast.LENGTH_LONG).show();
+                if (attempt>0){
+                    attempt--;
+                    if (attempt==0){
+                        submit.setEnabled(false);
+                        Toast.makeText(signActivity.this,"account blocked!",Toast.LENGTH_LONG).show();
+                    }
+
+                    else{
+                        Toast.makeText(signActivity.this,"wrong info",Toast.LENGTH_LONG).show();
+                    }
                 }
+
             }
         });
 
