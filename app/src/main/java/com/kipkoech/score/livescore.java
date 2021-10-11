@@ -16,7 +16,7 @@ import butterknife.ButterKnife;
 
 public class livescore extends AppCompatActivity {
     @BindView(R.id.listView) ListView mListview;
-    private String[] countries = new String[] {"Kenya","Tanzania","Uganda","Egypt","Nigeria"};
+    private String[] countries = new String[] {"Kenya","Tanzania","Uganda","Egypt","Nigeria","Egypt"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
