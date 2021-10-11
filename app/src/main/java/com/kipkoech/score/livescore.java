@@ -25,16 +25,23 @@ public class livescore extends AppCompatActivity {
         setContentView(R.layout.activity_livescore);
         ButterKnife.bind(this);
 
-        ArrayAdapter adapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1,countries);
+//        ArrayAdapter adapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1,countries);
+//        mListview.setAdapter(adapter);
+        livescoreAdapter adapter = new livescoreAdapter(this, android.R.layout.simple_list_item_1,countries,noGames);
         mListview.setAdapter(adapter);
 
-        mListview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                String countries = ((TextView)view).getText().toString();
-                Toast.makeText(livescore.this,countries,Toast.LENGTH_LONG).show();
-            }
-        });
+
+
+      mListview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+          @Override
+          public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+              Intent intent = new Intent(livescore.this,matches.class);
+              startActivity(intent);
+          }
+      });
+
+
+
 
     }
 }
