@@ -21,7 +21,7 @@ public class livescoreAdapter extends ArrayAdapter {
       public Object getItem(int position){
         String countries = mCountries[position];
         String noGames = mNoGames[position];
-        return  String.format("%s \n run %s" , countries,noGames);
+        return  String.format("%s \n no of games %s" , countries,noGames);
     }
     @Override
     public int getCount() {

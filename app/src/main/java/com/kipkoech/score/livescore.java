@@ -25,8 +25,7 @@ public class livescore extends AppCompatActivity {
         setContentView(R.layout.activity_livescore);
         ButterKnife.bind(this);
 
-//        ArrayAdapter adapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1,countries);
-//        mListview.setAdapter(adapter);
+
         livescoreAdapter adapter = new livescoreAdapter(this, android.R.layout.simple_list_item_1,countries,noGames);
         mListview.setAdapter(adapter);
 
