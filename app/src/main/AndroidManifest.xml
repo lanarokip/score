@@ -10,14 +10,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Score">
         <activity
+            android:name=".matches"
+            android:exported="true" />
+        <activity
+            android:name=".livescoreAdapter"
+            android:exported="true" />
+        <activity
             android:name=".livescore"
             android:exported="true" />
         <activity android:name=".signActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.kipkoech.score.MainActivity">
-
-            </meta-data>
+                android:value="com.kipkoech.score.MainActivity" />
         </activity>
         <activity
             android:name=".MainActivity"
