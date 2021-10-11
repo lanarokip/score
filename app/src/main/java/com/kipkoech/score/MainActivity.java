@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
         sign.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(MainActivity.this,"please input ur cridentials",Toast.LENGTH_LONG).show();
+                Toast.makeText(MainActivity.this,"please input ur credentials",Toast.LENGTH_LONG).show();
                 Intent intent = new Intent(MainActivity.this, signActivity.class);
                 startActivity(intent);
 
